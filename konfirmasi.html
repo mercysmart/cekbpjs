@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CekBPJS:KorbanASAP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo6.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">Cek</a></li> |
+				<li><a href="pilih.html">Pilih</a></li> |
+				<li class="active"><a href="konfirmasi.html">Konfirmasi</a></li>|
+				<li><a href="berhasil.html">Berhasil</a></li> |
+				<li><a href="kontak.html">Kontak</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+					<form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+								<select class="custom-select" id="select-1">
+									<option selected="selected">EN</option>
+									<option>USA</option>
+									<option>AUS</option>
+									<option>UK</option>
+									<option>IND</option>
+								</select>
+							</div>		
+						</div>		
+					</form>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Cek</a></li> 
+				<li><a href="pilih.html">Pilih</a></li> 
+				<li class="active"><a href="konfirmasi.html">Konfirmasi</a></li>
+				<li><a href="berhasil.html">Berhasil</a></li> |
+				<li><a href="kontak.html">Kontak</a></li>
+				</ul>
+				<a href="#" id="pull">Konfirmasi</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="details">
+			<h2>Konfirmasi Pemesanan CekBPJS:KorbanASAP</h2>
+			<div class="det_pic">
+				  <img src="images/det_pic.jpg" alt="" />
+			</div>
+			<div class="det_text">
+				<p class="para">
+				<h2> <strong> Konfirmasi Pemesanan Rumah Sakit </strong></h2>
+				<h1> Nomor BPJS: 0001336283908</h1> <br> 
+					<h1>Tanggal Masuk Kamar: 25 Oktober 2015</h1>
+					<div class="book_date">
+						<form>
+							<input class="date" id="datepicker" type="text" value="DD/MM/YY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
+						</form>
+					</div>					
+				</li>
+				<br>
+				<h1> Kamar Konfirmasi	: <br>
+								<select>
+								<option value="7 Pria">Kelas 1: 30 Kamar (Pria)</option>
+  								<option value="6 Wanita">Kelas 1: 6 Kamar (Wanita)</option>
+  								<option value="3 Anak">Kelas 1: 3 Kamar (Anak)</option>
+								<option value="---">---</option>
+								</select>
+				</h1>
+				<br>
+				<h1>Tertanda RS Pilihan : </h1>
+				<h1>RSUD Doris Sylvanus</h1>
+				<h1>Telp:05363308671</h1>
+				<h1>Alamat:Jl. Tambun Bungai No.4 Palangkaraya </h1>
+				<br>
+				<br>
+				<form>
+					<input type="submit" value="Print" style="width: 160px;" class="btn btn-info" style="text-transform: capitalize;">
+				</form>
+				</div>
+				<br>
+				<br>
+				<h2> <strong>Konfirmasi Pemesanan BPJS</strong> </h2>
+				<h1> Nomor BPJS: 0001336283908</h1> <br> 
+					<h1>Tanggal Masuk Kamar: 25 Oktober 2015</h1>
+					<div class="book_date">
+						<form>
+							<input class="date" id="datepicker" type="text" value="DD/MM/YY" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'DD/MM/YY';}">
+						</form>
+					</div>					
+				</li>
+				<br>
+				<h1> Kamar Konfirmasi	: <br>
+								<select>
+								<option value="7 Pria">Kelas 1: 30 Kamar (Pria)</option>
+  								<option value="6 Wanita">Kelas 1: 6 Kamar (Wanita)</option>
+  								<option value="3 Anak">Kelas 1: 3 Kamar (Anak)</option>
+								<option value="---">---</option>
+								</select>
+				</h1> <br>
+				<h1>Tertanda RS Pilihan : </h1>
+				<h1>RSUD Doris Sylvanus</h1>
+				<h1>Telp:05363308671 </h1>
+				<h1>Alamat: Jl. Tambun Bungai No.4 Palangkaraya</h1>
+				<br>
+				<br>
+				<form>
+					<input type="submit" value="Print" style="width: 160px;" class="btn btn-info" style="text-transform: capitalize;">
+				</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>		
+<!--start footer -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>© All rights reserved | MercySmart</a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">Cek</a></li>
+					<li><a href="pilih.html">Pilih</a></li>
+					<li><a href="konfirmasi.html">Konfirmasi</a></li>
+					<li><a href="berhasil.html">Berhasil</a></li>
+					<li><a href="kontak.html">Kontak</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="#"></a></li>
+					<li><a class="icon2" href="#"></a></li>
+					<li><a class="icon3" href="#"></a></li>
+					<li><a class="icon4" href="#"></a></li>
+					<li><a class="icon5" href="#"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>

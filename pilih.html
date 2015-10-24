@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CekBPJS:KorbanASAP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://christoga.github.io/css/bootstrap.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo6.png" alt=""></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">Cek</a></li> |
+				<li class="active"><a href="pilih.html">Pilih</a></li>	|
+				<li><a href="konfirmasi.html">Konfirmasi</a></li> |
+				<li><a href="berhasil.html">Berhasil</a></li> |
+				<li><a href="kontak.html">kontak</a></li>
+				<div class="clear"></div>
+			</ul>
+			<!-- start profile_details -->
+					<form class="style-1 drp_dwn">
+						<div class="row">
+							<div class="grid_3 columns">
+								<select class="custom-select" id="select-1">
+									<option selected="selected">EN</option>
+									<option>USA</option>
+									<option>AUS</option>
+									<option>UK</option>
+									<option>IND</option>
+								</select>
+							</div>		
+						</div>		
+					</form>
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li><a href="index.html">Cek</a></li> 
+				<li class="active"> <a href="pilih.html">Pilih</a></li> 
+				<li><a href="konfirmasi.html">Konfirmasi</a></li>
+				<li><a href="berhasil.html">Berhasil</a></li> 
+				<li><a href="kontak.html">Kontak</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="content">
+			<div class="room">
+				<h4>Rumah Sakit Rujukan Anda</h4>
+				<p class="para">Silahkan pilih Data Bed Rumah Sakit yang Tersedia Sesuai Wilayah Anda</p>
+			</div>
+
+				<div class="grids_of_2">
+					<div class="grids_of_img">
+						<img src="https://lh3.googleusercontent.com/-aSh3TRjtBsw/Vgzq1WOYz8I/AAAAAAAAAAc/vEndB799LxU/s630-fcrop64=1,000003caf776fe19/P_20151001_143403.jpg" alt=""/>
+						<img src="http://beritajakarta.com/multimedia/photo/2014_508c75c8507a2ae5223dfd2faeb98122/f8c6e4dcbdce561cac51f69ec81c6b8f.jpg" alt=""/>
+					</div>
+					<div class="grids_of_para">
+						<p class="para"><h1>Rumah Sakit Bhayangkara Palangkaraya<br> Telp:05363221520</h1><br>
+					
+							<ul>Jumlah Kamar:
+								<li>Kelas 1= 30 (Pria) 30 (Wanita) 5 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 1): 
+								<select>
+								<option value="---">---</option>
+  								<option value="30 Pria">30 (Pria)</option>
+  								<option value="20 Wanita">20 (Wanita)</option>
+  								<option value="3 Anak">3 (Anak)</option>
+								</select>
+								<br>
+							Jumlah Kamar:
+								<li>Kelas 2= 80 (Pria) 60 (Wanita) 10 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 2):
+								<select>
+								<option value="---">---</option>
+  								<option value="10 Pria">10 (Pria)</option>
+  								<option value="5 Wanita">5 (Wanita)</option>
+  								<option value="1 Anak">1 (Anak)</option>
+								</select>
+								<br>
+							Jumlah Kamar:
+								<li>Kelas 3= 60 (Pria) 30 (Wanita) 20 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 3): 	
+								<select>
+								<option value="---">---</option>
+  								<option value="3 Pria">3 (Pria)</option>
+  								<option value="4 Wanita">4 (Wanita)</option>
+  								<option value="3 Anak">3 (Anak)</option>
+								</select>
+								<br>
+					</div>
+					<div class="clear"></div>					
+				</div>
+				<div class="grids_of_2">
+					<div class="grids_of_img">
+						<img src="https://geo0.ggpht.com/cbk?panoid=KEelkh-pP-W4LyE2HTe3Qw&output=thumbnail&cb_client=search.WEB_PLUS_LOCAL.gps&thumb=2&w=295&h=79&yaw=188.25125&pitch=0" alt=""/>
+						<img src="https://lh4.googleusercontent.com/-ys35rhlkBMU/VbmZS_8Fk4I/AAAAAAAAABE/CpNQu0vmHXU/s160-k-no/" alt=""/>
+					</div>
+					<div class="grids_of_para">
+						<p class="para"><h1>Rumah Sakit Islam PKU Muhammadiyah Palangkaraya<br> Telp:05363244801</h1><br>
+							<ul>Jumlah Kamar:
+								<li>Kelas 1= 20 (Pria) 20 (Wanita) 10 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 1):
+								<select>
+								<option value="---">---</option>
+  								<option value="18 Pria">18 (Pria)</option>
+  								<option value="16 Wanita">16 (Wanita)</option>
+  								<option value="5 Anak">5 (Anak)</option>
+								</select>
+								<br>
+							Jumlah Kamar:
+								<li>Kelas 2= 40 (Pria) 36 (Wanita) 12 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 2):
+								<select>
+								<option value="---">---</option>
+  								<option value="8 Pria">8 (Pria)</option>
+  								<option value="20 Wanita">20 (Wanita)</option>
+  								<option value="5 Anak">5 (Anak)</option>
+								</select>
+								<br>
+							Jumlah Kamar:
+								<li>Kelas 3= 60 (Pria) 54 (Wanita) 30 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 3):
+								<select>
+								<option value="---">---</option>
+  								<option value="8 Pria">8 (Pria)</option>
+  								<option value="21 Wanita">21 (Wanita)</option>
+  								<option value="10 Anak">10 (Anak)</option>
+								</select>
+								<br>
+							</ul>
+					</div>
+					<div class="clear"></div>					
+				</div>						
+					<div class="grids_of_2">
+					<div class="grids_of_img">
+						<img src="https://lh3.googleusercontent.com/K8jZGV-YWviWf6NmGbe2sG5B8yskwj0M_owda5F895MtLevWsFJA1bqXz8_XKn_Ryc8BTEk=s144" alt=""/>
+						<img src="https://lh3.googleusercontent.com/-NyD7KJm3SUM/Vdwrgcajp6I/AAAAAAAAABk/c6m3hSp9j4c/s630-fcrop64=1,01620000fe9cffff/P_20150824_151246.jpg" alt=""/>
+					</div>
+					<div class="grids_of_para">
+						<p class="para"><h1>RSUD Dr Doris Sylvanus<br> Telp:05363308671</h1>
+						<ul>Jumlah Kamar:
+								<li>Kelas 1= 10 (Pria) 12 (Wanita) 4 (Anak) </li>
+							Pesan Kamar yang Tersedia (Kelas 1):
+								<select>
+								<option value="---">---</option>
+  								<option value="7 Pria">7 (Pria)</option>
+  								<option value="6 Wanita">6 (Wanita)</option>
+  								<option value="3 Anak">3 (Anak)</option>
+								</select>
+								<br>
+							Jumlah Kamar:
+								<li>Kelas 2= 20 (Pria) 20 (Wanita) 12 (Anak) </li>
+							Pesan Kamar yang Tersedia(Kelas 2):
+								<select>
+								<option value="---">---</option>
+  								<option value="11 Pria">11 (Pria)</option>
+  								<option value="12 Wanita">12 (Wanita)</option>
+  								<option value="8 Anak">8 (Anak)</option>
+								</select>
+								<br>
+							Jumlah Kamar:
+								<li>Kelas 3= 60 (Pria) 60 (Wanita) 24 (Anak) </li>
+							Kamar yang Tersedia:
+								<select>
+								<option value="---">---</option>
+  								<option value="10 Pria">10 (Pria)</option>
+  								<option value="16 Wanita">16 (Wanita)</option>
+  								<option value="4 Anak">4 (Anak)</option>
+								</select>
+								<br>
+							</ul>
+						</p>
+					</div>			
+				</div>
+		</div>
+		<div class="sidebar">
+			 <div class="date_btn">
+				<form>
+					<input type="submit" value="Pesan Sekarang" style="width: 160px;" class="btn btn-info" style="text-transform: capitalize;">
+				</form>
+			</div>
+			<h4>Fasilitas Kamar</h4>
+			<ul class="s_nav">
+				<li><a href="#">Obat & Rawat Jalan Ditanggung BPJS</a></li>
+				<li><a href="#">Ruangan Ber-AC</a></li>
+				<li><a href="#">Suster 24/7</a></li>
+			</ul>
+			<h4>Bayar Dengan</h4>
+			<ul class="s_nav1">
+				<li><a class="icon1" href="#"></a></li>
+				<li><a class="icon2" href="#"></a></li>
+				<li><a class="icon3" href="#"></a></li>
+				<li><a class="icon4" href="#"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>© All rights reserved | MercySmart</a></span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="klik.html">Cek</a></li>
+					<li><a href="pilih.html">Pilih</a></li>
+					<li><a href="konfirmasi.html">Konfirmasi</a></li>
+					<li><a href="berhasil.html">Berhasil</a></li>
+					<li><a href="Kontak.html">Kontak</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="#"></a></li>
+					<li><a class="icon2" href="#"></a></li>
+					<li><a class="icon3" href="#"></a></li>
+					<li><a class="icon4" href="#"></a></li>
+					<li><a class="icon5" href="#"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>
